@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Header-bgimage */
+#top {
+    height: 65vh;
+    width: 100%;
+    background-image: url("images/mac.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.no-bullets {
+    list-style: none;
+}
+.no-bullets li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* navigation bar */
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 3s;
+    padding: 0 8px;
+}
+.nav-menu li a:hover {
+    border-bottom: 1px solid black;
+    color: lightgray;
+}
+.horizontal-list li {
+    margin: 6px 8px;
+    display: inline-block;
+}
+/* Hamburger Menu */
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+.bars i {
+    font-size: 2rem;
+}
+.hamburger-menu-list {
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+.hamburger-menu-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+.hamburger-menu:hover .hamburger-menu-list {
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.hamburger-menu-list li{
+    margin: 0.4rem 0px;
+}
+
+
+/* Name */
+#name-icon-container{
+    margin-top: 18vh;
+}
+#name {
+    color: bisque;
+    margin-top: 60px;
+    font-size: 4.5rem;
+}
+
+/* social icon */
+.social-icon i {
+    height: 1.25rem;
+    width: 1.25rem;
+    padding: 10px;
+}
+
+.social-icon li {
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.social-icon li:hover {
+    box-shadow: 0px 0px 6px 8px rgba(230, 196, 196, 0.3);
+}
+
+
+/* sections */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: rgb(245, 245, 245);
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+:root {
+    --section-header-color: #2857a4;   /* css variable */
+}
+.section-heading {
+    margin: 30px 0;
+    padding: 20px 0 10px;
+    color: var(--section-header-color);
+    font-size: 1.75rem;
+}
+.section-heading span {
+    margin: 0.2rem;
+}
+
+
+/* Profile Image  and  details*/
+#about {
+    position: relative;
+}
+
+#dp-container {
+    height: 12rem;
+    width: 12rem;
+    margin: -13vh 0 20px 0;
+}
+#dp-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 1px 1px 10px 4px lightgrey;
+}
+
+#detail {
+    width: 70%;
+    margin: 80px;
+    color: grey;
+    word-spacing: 4px;
+    line-height: 28px;
+}
+.highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/* skills */
+#skill-box {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill-item { 
+    border-radius: 20px;
+    background-color: lightgray;
+    box-shadow: 1px 1px 5px 4px #b9b9b9 inset;    
+    height: 35px;
+    width: 200px;
+    margin: 25px; 
+    overflow: hidden;
+}
+.skill-item div {
+    box-shadow: 1px 1px 5px 2px #989882;
+    border-radius: 20px 0 0 20px;
+    height: inherit;
+}
+.skill-item div span {
+    display: inline-block;
+    height: inherit;
+    padding-top: 4px;
+    color: white;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+#s1 {
+    width: 80%;
+    background-color: #2857a4;
+}
+#s2 {
+    width: 90%;
+    background-color: orangered;
+}
+#s3 {
+    width: 50%;
+    background-color: #754063;
+}
+#s4 {
+    width: 70%;
+    background-color: #3f6d4c;
+}
+#s5 {
+    width: 70%;
+    background-color: #754063;
+}
+#s6 {
+    width: 60%;
+    background-color: #2857a4;
+}
+#s7 {
+    width: 50%;
+    background-color: orangered;
+}
+#s8 {
+    width: 60%;
+    background-color: #2857a4;
+}
+#s9 {
+    width: 40%;
+    background-color: #3f6d4c;
+}
+
+
+/* Experience and Education */
+.timeline {
+    position: relative;
+    width: 75%;
+    margin-bottom: 50px;
+}
+.timeline-box {
+    position: relative;
+    margin: 10px;
+    width: 40%;
+    min-height: 200px;
+}
+.timeline-box:nth-child(even) {
+    left: 58%;
+}
+
+.timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 11%;
+    left: 50%;
+    border: 3px dashed #0096fa6b;
+    height: 65%;
+}
+.stop1, .stop2, .stop3 {
+    position: absolute;
+    left: 49.6%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    z-index: 1;
+}
+.stop1{
+    top: 10%;
+}
+.stop2{
+    top: 42%;
+}
+.stop3{
+    top: 74.8%;
+}
+.timeline-flyer {
+    position: sticky;
+    top: 30%;
+    z-index: 2;
+}
+.timeline-flyer i {
+    transform: rotate(90deg);
+    margin-top: -20px;
+    display: block;
+    color: #2857a4;
+    font-size: 30px;
+}
+
+.degree, .institute, .date {
+    text-align: right;
+}
+.edu-detail {
+    margin-top: 20px;
+}
+.edu-detail p{
+    font-size: 0.85rem;
+    color: grey;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    text-align: justify;
+}
+.com1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png");
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-size: contain;
+}
+.com2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-image: url("https://www.top-employers.com/contentassets/ed7e1b2cb1fd40cab269b2f1839ce5ce/oid00d200000000wi7ids0683y00000jvywbda3y000000iazmsgikkcyh5cad4etln20g6hz3b1gdurj453kqqoqlxgaaspdffalse3/?format=jpeg&bgcolor=white&quality=75&height=75");
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-size: contain;
+}
+.com3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-image: url("https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png");
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-size: contain;
+}
+.school::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-image: url("https://www.logolynx.com/images/logolynx/51/51903985b6a5a6b5368494ba7e56a56f.jpeg");
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-size: contain;
+}
+.college::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/NSUT_logo.png/440px-NSUT_logo.png");
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-size: contain;
+}
+.degree {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2857a4;
+}
+.institute {
+    font-size: 1.25rem;
+    color: darkorange;
+}
+.date {
+    color: grey;
+}
+
+
+/* portfolio */
+#portfolio-box {
+    width: 80%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-item {
+    height: 15rem;
+    width: 20rem;
+    max-width: 300px;
+    margin: 10px;
+    position: relative;
+    background-size: cover;
+}
+.portfolio-item img {
+    height: 100%;
+    width: 100%;
+}
+.item-detail {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    color: transparent;
+}
+.item-detail p {
+    padding: 40px 5px;
+    text-align: center;
+    font-size: 30px;
+}
+.portfolio-item:hover .item-detail {
+    box-shadow: 0 0 20px 0px #74ADC8;
+    color: white;
+    background-color: #80808078; 
+}
+
+
+/* contact */
+#contact {
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 70%);
+    width: 100%;
+    color: white;
+}
+#contact-heading {
+    color: white;
+    padding: 50px 0 50px;
+}
+
+#contact-detail {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#contact-detail>div {
+    width: 500px;
+    margin-bottom: 50px; 
+}
+#contact-form input, textarea, button { 
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    color: white;
+    background-color: inherit;
+}
+#contact-form input, textarea { 
+    width: 90%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1.25rem;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+#contact-form button {
+    padding: 12px;
+    border: 2px solid white;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#contact-form button:hover {
+    background-color: white;
+    color: #13386fe0;;
+}
+
+#contact .addr {
+    color: lightgrey;
+    font-size: 0.8em;
+    margin: 20px 0;
+}
+#contact span.addr {
+    padding-left: 6px;
+}
+#contact .addr-container {
+    margin: 20px 0;
+}
+
+#bottom-icon-container {
+    padding-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .timeline-divider {
+        left: 5%;
+    }
+    .timeline-box {
+        /* the important keyword overrides the nth child pseudo class */
+        left: 25% !important;  
+        width: 80%; 
+    }
+    /* .timeline-box:nth-child(n) {
+        left: 25%;  
+        width: 80%; 
+    } 
+    */
+
+    .timeline-box::after {
+        left: -30% !important;
+    }
+    /* .timeline-box:nth-child(n)::after {
+        left: -30%;
+    } 
+    */
+
+    .stop1, .stop2, .stop3 {
+        left: 3.6%;
+    }
+    html {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    #name {
+        font-size: 3rem;
+    }
+    .bars {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
